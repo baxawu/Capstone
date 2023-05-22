@@ -169,9 +169,37 @@ header .navbar-nav .nav-item .nav-link:hover{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 10px;
     color: white;
     z-index: 1;
 }
+
+.banner .carousel-inner .carousel-item .carousel_text2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 150px;
+    color: white;
+    z-index: 1;
+}
+
+.banner .carousel-inner .carousel-item .carousel_text2 p{
+    margin-right: 480px;
+}
+
+.banner .carousel-inner .carousel-item .carousel_button {
+    margin-right: 310px;
+    margin-bottom: 100px;
+}
+
 
 .banner .carousel-inner .carousel-item .carousel_overlay{
     position: absolute;
@@ -190,6 +218,12 @@ header .navbar-nav .nav-item .nav-link:hover{
     color: #fff;
 }
 
+.carousel_text2 h5{
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #fff;
+}
 
 .carousel_button .btn-white:hover {
     padding: 12px 35px;
@@ -242,9 +276,43 @@ header .navbar-nav .nav-item .nav-link:hover{
     background-color: #fff;
 }
 
+/* Custiom cirle button Carousel */
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 5px 10px;
+    background-color: #fff;
+    display: inline-block;
+    transition: all .2s ease;
+    border-radius: 50%;
+    opacity: 0.8;
+    border: none;
+    overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+    background-color: #189A46;
+    width: 30px;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+    opacity: 1;
+    background-color: #189A46;
+    width: 30px;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
 /* About_Us */
 .about_us{
     padding-top: 50px;
 }
+
+
 
 
