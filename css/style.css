@@ -15,8 +15,155 @@ body, html {
     margin: 0 auto;
 }
 
+.btn-white {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #64bb83;
+}
+
+.border-btn {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 35px;
+}
+
+.btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
+
 /* header */
 
+header .navbar-brand h1{
+    color: #189a46;
+    font-weight: 600;
+}
+
+header .navbar-nav .nav-item .nav-link{
+    transition: all .5s;
+}
+
+header .navbar-nav .nav-item .nav-link:hover{
+    color: #64bb83;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0 12px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    transition: all 0.5s ease;
+    padding: 14px 0;
+    font-size: 19px;
+    font-weight: 400;
+    position: relative;
+    color: #1f2a23;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    bottom: 17px;
+    display: inline-block;
+    background: #64bb83;
+    transition: all .5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before{
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    transform: translateX(-50px);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 1px solid #999;
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
+}
 
 
+.nav-item .nav-link.active{
+    color: #64bb83;
+}
 
+
+.dropdown-toggle::after{
+    position: absolute;
+    display: inline-block;
+    top: 23px;
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    border: none;
+    color: #999;
+}
+
+
+/* Carousel */
+.banner .carousel-inner{
+    height: 100vh;
+}
+
+.banner .carousel-inner .carousel-item{
+    position: relative;
+    height: 100%;
+}
+
+.banner .carousel-inner .carousel-item .carousel_text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+}
+
+.banner .carousel-inner .carousel-item .carousel_overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(39, 43, 54, 0.5);
+    z-index: 1;
+}
+
+.carousel_text h5{
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #fff;
+}
