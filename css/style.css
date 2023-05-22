@@ -8,6 +8,15 @@
 body, html {
     font-family: 'Jost', sans-serif;
     font-size: 19px;
+    background-color: #f9f7fe;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #189A46;
 }
 
 .container{
@@ -15,35 +24,48 @@ body, html {
     margin: 0 auto;
 }
 
-.btn-white {
-    padding: 12px 35px;
-    font-size: 18px;
-    line-height: 28px;
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: 0.3s ease-in;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #64bb83;
+.title{
+    text-align: center;
 }
 
-.border-btn {
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 35px;
+.title p:first-child{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #f53626;
 }
 
-.btn-style {
-    padding: 12px 35px;
-    font-size: 18px;
-    line-height: 28px;
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: 0.3s ease-in;
-    border-radius: 10px;
+.title h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #000c04;
+}
+
+.read{
+        font-size: 17px;
+        padding: 0;
+        border-bottom: 2px solid #189A46;
+        color: #000c04;
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        border-radius: 0;
+        margin-top: 20px;
+        display: inline-block;
+        text-transform: capitalize;
 }
 
 /* header */
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #fff;
+}
 
 header .navbar-brand h1{
     color: #189a46;
@@ -59,7 +81,7 @@ header .navbar-nav .nav-item .nav-link:hover{
 }
 
 .navbar-expand-lg .navbar-nav .nav-item {
-    padding: 0 12px;
+    padding: 0 15px;
     transition: all 0.5s ease;
     position: relative;
 }
@@ -70,7 +92,7 @@ header .navbar-nav .nav-item .nav-link:hover{
     font-size: 19px;
     font-weight: 400;
     position: relative;
-    color: #1f2a23;
+    color: #000c04;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link::before{
@@ -157,7 +179,7 @@ header .navbar-nav .nav-item .nav-link:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(39, 43, 54, 0.5);
+    background-color: rgba(0, 0, 0, 0.664);
     z-index: 1;
 }
 
@@ -167,3 +189,62 @@ header .navbar-nav .nav-item .nav-link:hover{
     font-weight: 700;
     color: #fff;
 }
+
+
+.carousel_button .btn-white:hover {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .3s;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #64bb83;
+}
+.carousel_button .btn-white{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .3s;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #64bb83;
+}
+
+
+.carousel_button .border-btn {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 35px;
+}
+
+.carousel_button .btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.carousel_button .btn-style:hover {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all 0.3s;
+    border-radius: 10px;
+    color: #64bb83;
+    background-color: #fff;
+}
+
+/* About_Us */
+.about_us{
+    padding-top: 50px;
+}
+
+
