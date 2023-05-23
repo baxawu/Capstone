@@ -68,6 +68,39 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Show a second modal and hide this one with the button below.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </div>
       </nav>
@@ -75,15 +108,15 @@
   </header>
   <!-- Banner -->
   <section class="banner">
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
@@ -183,9 +216,9 @@
         <div class="card" style="width: 20rem;">
           <div class="card-body">
             <div class="icon text-start">
-              <i class="fa-regular fa-snowflake"></i>
+              <i class="fa-solid fa-utensils"></i>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Walking</h5></a>
+            <a href="#"><h5 class="card-title-head text-start">Healthy Meals</h5></a>
             <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
             <div class="text-start">
               <a href="#" class="read">Read More</a></div>
@@ -196,9 +229,9 @@
         <div class="card" style="width: 20rem;">
           <div class="card-body">
             <div class="icon text-start">
-              <i class="fa-regular fa-snowflake"></i>
+              <i class="fa-solid fa-hands"></i>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Walking</h5></a>
+            <a href="#"><h5 class="card-title-head text-start">Pet Sitting</h5></a>
             <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
             <div class="text-start">
               <a href="#" class="read">Read More</a></div>
@@ -209,9 +242,9 @@
         <div class="card" style="width: 20rem;">
           <div class="card-body">
             <div class="icon text-start">
-              <i class="fa-regular fa-snowflake"></i>
+              <i class="fa-solid fa-sitemap"></i>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Walking</h5></a>
+            <a href="#"><h5 class="card-title-head text-start">Dog Activities</h5></a>
             <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
             <div class="text-start">
               <a href="#" class="read">Read More</a></div>
@@ -222,9 +255,9 @@
         <div class="card" style="width: 20rem;">
           <div class="card-body">
             <div class="icon text-start">
-              <i class="fa-regular fa-snowflake"></i>
+              <i class="fa-solid fa-shower"></i>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Walking</h5></a>
+            <a href="#"><h5 class="card-title-head text-start">Pet Daycare</h5></a>
             <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
             <div class="text-start">
               <a href="#" class="read">Read More</a></div>
@@ -235,9 +268,9 @@
         <div class="card" style="width: 20rem;">
           <div class="card-body">
             <div class="icon text-start">
-              <i class="fa-regular fa-snowflake"></i>
+              <i class="fa-solid fa-user-doctor"></i>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Walking</h5></a>
+            <a href="#"><h5 class="card-title-head text-start">Pet Grooming</h5></a>
             <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
             <div class="text-start">
               <a href="#" class="read">Read More</a></div>
@@ -278,23 +311,21 @@
       <div class="number_flex d-flex justify-content-around align-content-center text-center">
         <!-- items -->
         <div class="items">
-          <h1><span class="counter">18</span></h1>
+          <h1><span class="counter">730</span></h1>
           <p>Happy Clients</p>
         </div>
         <!-- items -->
         <div class="items">
-          <h1><span class="counter">20</span></h1>
+          <h1><span class="counter">80</span></h1>
           <p>Professionals</p>
         </div>
         <!-- items -->
         <div class="items">
-          <i class="flaticon-startup"></i>
-          <h1><span class="counter">30</span></h1>
+          <h1><span class="counter">812</span></h1>
           <p>Adopted Pets</p>
         </div>
         <!-- items -->
         <div class="items">
-          <i class="flaticon-confetti"></i>
           <h1 class="counter">90</h1>
           <p>Awards</p>
         </div>
@@ -312,6 +343,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- CountUp -->
+  <script src="./js/jquery.countup.min.js"></script>
+  <script>
+    $('.counter').countUp({
+  'time': 2000,
+  'delay': 10
+});
+  </script>
 </body>
 
 </html>

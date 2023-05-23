@@ -306,7 +306,7 @@ header .navbar-nav .nav-item .nav-link:hover {
     border-radius: 10px;
 }
 
-#carouselExampleIndicators .carousel-indicators .active {
+#carouselExampleAutoplaying .carousel-indicators .active {
     opacity: 1;
     background-color: #189A46;
     width: 30px;
