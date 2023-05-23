@@ -13,6 +13,8 @@ body, html {
 
 a{
     text-decoration: none;
+    color: #000c04;
+    transition: all .5s;
 }
 
 a:hover{
@@ -57,6 +59,9 @@ a:hover{
 }
 
 /* header */
+header{
+    background-color: #ffffff;
+}
 
 .fixed-top {
     position: fixed;
@@ -311,6 +316,40 @@ header .navbar-nav .nav-item .nav-link:hover{
 /* About_Us */
 .about_us{
     padding-top: 50px;
+    background-color: #ffffff;
+    color: #696969;
+}
+
+/* Grid */
+.about_usgrid{
+    padding-top: 50px; 
+}
+
+.card{
+    border: none;
+    border-radius: 10px;
+    transition: all .5s
+    ;
+}
+
+.card:hover{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.card .card-body .icon i{
+    color: #189A46;
+    font-size: 30px;
+}
+
+.card .card-body .card-title-head{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card .card-body .card-text{
+    color: #696969;
+    margin-bottom: 0;
 }
 
 
