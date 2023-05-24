@@ -152,6 +152,102 @@ header .navbar-nav .nav-item .nav-link:hover {
     color: #999;
 }
 
+/* Search_icon */
+.bg_search {
+    background-color: #f9f7fe;
+    font-size: 16px;
+    line-height: 25px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    padding: 0;
+    text-align: center;
+    color: #189A46;
+    display: inline-block;
+    border: none;
+}
+
+.bg_search:hover{
+    background-color: #189A46;
+    color:white;
+}
+
+/* Search-popup */
+
+.modal-dialog {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    pointer-events: auto;
+    background-color: rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+    border: transparent;
+    outline: 0;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+}
+/* Button close */
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em;
+    color: white;
+    background: url(../img/VisualEditor_-_Icon_-_Close_-_white.svg) center center / 2em no-repeat transparent;
+    border: none;
+    border-radius: 0.375rem;
+    opacity: 0.5;
+}
+/* Form-search */
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: all .15s ease-in-out, all .15s ease-in-out;
+}
+
+.btnn:first-child:hover, :not(.btn-check)+.btnn:hover {
+    color: white;
+    background-color: #189A46;
+}
 
 /* Carousel */
 .banner .carousel-inner {
@@ -402,6 +498,7 @@ header .navbar-nav .nav-item .nav-link:hover {
     display: inline-block;
     
 }
+
 
 /* Number */
 .number{

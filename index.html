@@ -28,8 +28,8 @@
   <!-- Header -->
   <header class="fixed-top">
     <div class="container">
-      <!-- Logo -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Logo -->
         <div class="container-fluid">
           <a class="navbar-brand fs-3 fw-bold" href="#">
             <h1>Pooch Care</h1>
@@ -68,18 +68,23 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
+            <!-- PopUp-search -->
             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">  
+                    </button>
                   </div>
                   <div class="modal-body">
-                    Show a second modal and hide this one with the button below.
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                    <nav class="navbar bg-body-tertiary">
+                      <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </nav>
                   </div>
                 </div>
               </div>
@@ -88,21 +93,13 @@
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Hide this modal and show the first with the button below.
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="bg_search" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
-        </div>
       </nav>
     </div>
   </header>
@@ -195,91 +192,115 @@
       </div>
     </div>
   </section>
-<!-- Grid -->
-<section class="about_usgrid">
-  <div class="container text-center">
-    <div class="row gx-5 gy-4">
-      <div class="col-4">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <div class="icon text-start">
-              <i class="fa-regular fa-snowflake"></i>
+  <!-- Grid -->
+  <section class="about_usgrid">
+    <div class="container text-center">
+      <div class="row gx-5 gy-4">
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <div class="icon text-start">
+                <i class="fa-regular fa-snowflake"></i>
+              </div>
+              <a href="#">
+                <h5 class="card-title-head text-start">Dog Walking</h5>
+              </a>
+              <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
+              <div class="text-start">
+                <a href="#" class="read">Read More</a>
+              </div>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Walking</h5></a>
-            <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
-            <div class="text-start">
-              <a href="#" class="read">Read More</a></div>
           </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <div class="icon text-start">
-              <i class="fa-solid fa-utensils"></i>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <div class="icon text-start">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <a href="#">
+                <h5 class="card-title-head text-start">Healthy Meals</h5>
+              </a>
+              <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
+              <div class="text-start">
+                <a href="#" class="read">Read More</a>
+              </div>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Healthy Meals</h5></a>
-            <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
-            <div class="text-start">
-              <a href="#" class="read">Read More</a></div>
           </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <div class="icon text-start">
-              <i class="fa-solid fa-hands"></i>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <div class="icon text-start">
+                <i class="fa-solid fa-hands"></i>
+              </div>
+              <a href="#">
+                <h5 class="card-title-head text-start">Pet Sitting</h5>
+              </a>
+              <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
+              <div class="text-start">
+                <a href="#" class="read">Read More</a>
+              </div>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Pet Sitting</h5></a>
-            <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
-            <div class="text-start">
-              <a href="#" class="read">Read More</a></div>
           </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <div class="icon text-start">
-              <i class="fa-solid fa-sitemap"></i>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <div class="icon text-start">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <a href="#">
+                <h5 class="card-title-head text-start">Dog Activities</h5>
+              </a>
+              <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
+              <div class="text-start">
+                <a href="#" class="read">Read More</a>
+              </div>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Dog Activities</h5></a>
-            <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
-            <div class="text-start">
-              <a href="#" class="read">Read More</a></div>
           </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <div class="icon text-start">
-              <i class="fa-solid fa-shower"></i>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <div class="icon text-start">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <a href="#">
+                <h5 class="card-title-head text-start">Pet Daycare</h5>
+              </a>
+              <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
+              <div class="text-start">
+                <a href="#" class="read">Read More</a>
+              </div>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Pet Daycare</h5></a>
-            <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
-            <div class="text-start">
-              <a href="#" class="read">Read More</a></div>
           </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <div class="icon text-start">
-              <i class="fa-solid fa-user-doctor"></i>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <div class="icon text-start">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <a href="#">
+                <h5 class="card-title-head text-start">Pet Grooming</h5>
+              </a>
+              <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
+              <div class="text-start">
+                <a href="#" class="read">Read More</a>
+              </div>
             </div>
-            <a href="#"><h5 class="card-title-head text-start">Pet Grooming</h5></a>
-            <p class="card-text text-start">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut <br> blandit eu leo.</p>
-            <div class="text-start">
-              <a href="#" class="read">Read More</a></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- Choose Us -->
   <section class="choose_us">
     <div class="container">
@@ -291,15 +312,17 @@
           <div class="title">
             <p>WHY CHOOSE US</p>
             <h1>What We Offer For You</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur
+              adipisicingelit.
             <ul>
-                <li><span class="fa fa-check"></span>Certified Groomer            </li>
-                <li><span class="fa fa-check"></span>10 Years of Experience            </li>
-                <li><span class="fa fa-check"></span>Pet Lover            </li>
-                <li><span class="fa fa-check"></span>Customer Supports            </li>
-                <li><span class="fa fa-check"></span>Veterinary Help            </li>
-    
-             </ul>
+              <li><span class="fa fa-check"></span>Certified Groomer </li>
+              <li><span class="fa fa-check"></span>10 Years of Experience </li>
+              <li><span class="fa fa-check"></span>Pet Lover </li>
+              <li><span class="fa fa-check"></span>Customer Supports </li>
+              <li><span class="fa fa-check"></span>Veterinary Help </li>
+
+            </ul>
           </div>
         </div>
       </div>
@@ -344,15 +367,17 @@
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- CountUp -->
   <script src="./js/jquery.countup.min.js"></script>
   <script>
     $('.counter').countUp({
-  'time': 2000,
-  'delay': 10
-});
+      'time': 2000,
+      'delay': 10
+    });
   </script>
 </body>
 
