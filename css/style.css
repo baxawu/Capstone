@@ -22,6 +22,10 @@ a:hover {
     color: #189A46;
 }
 
+.stop_hover{
+    color: #189A46;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -69,7 +73,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 10;
     background-color: #fff;
 }
 
@@ -514,4 +518,60 @@ header .navbar-nav .nav-item .nav-link:hover {
 .number_flex .items p{
     font-size: 20px;
     color: #ceead8;
+}
+
+/* SERVICES PAGES */
+.breadcrumb {
+    margin-top: 90px;
+    background-image: url(../img/banner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.breadcrumb::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
+.breadcrumb h2.title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+ul.breadcrumbs_text {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.stop_hover{
+    color: #189A46;
+}
+
+/* Grid_Services */
+/* su dung lai phan choose_us cua phan HOME */
+.boder_bottom{
+    border-bottom: 1px solid #f0f3f0;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
 }
