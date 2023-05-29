@@ -70,7 +70,7 @@ ul {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #fff;
 }
 
@@ -315,7 +315,7 @@ a.dropdown-item:hover::after{
 }
 
 .banner .carousel-inner .carousel-item .carousel_text2 p {
-  margin-right: 480px;
+  margin-right: 465px;
 }
 
 .banner .carousel-inner .carousel-item .carousel_button {
@@ -549,7 +549,7 @@ a.dropdown-item:hover::after{
 
 .ourPlans .Plans_item:nth-child(2) {
   position: relative;
-  z-index: 9;
+  z-index: 1;
   border-radius: 6px;
 }
 
@@ -1071,6 +1071,38 @@ ul.breadcrumbs_text {
 
 .dark .card:hover {
   background-color: #222222;
+}
+
+.dark .choose_text .title ul li span.fa {
+  background-color: #212529;
+}
+
+.dark .ourPlans {
+  background-color: #222222;
+}
+
+.dark .ourPlans .Plans_item .item-top {
+  color: black;
+}
+
+.dark .ourPlans .Plans_item .item_content{
+  background-color: black;
+}
+
+.dark .ourPlans .Plans_item .item-top {
+  color: white;
+}
+
+.dark .video {
+  background-color: #151515;
+}
+
+.dark .testtimon {
+  background-color: #222222;
+}
+
+.dark .stay{
+  background-color: #151515;
 }
 
 .dark #switchButton {
