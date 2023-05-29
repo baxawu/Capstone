@@ -686,6 +686,45 @@ a.dropdown-item:hover::after{
   cursor: pointer;
 }
 
+.mfp-close {
+  line-height: 40px;
+  position: absolute;
+  right: 595px;
+  top: 140px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 0 18px 10px;
+  color: #FFF;
+  font-style: normal;
+  font-size: 28px;
+  font-family: 'Jost', sans-serif;
+  background: transparent;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button.mfp-close, button.mfp-arrow {
+  overflow: visible;
+  cursor: pointer;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: none;
+  padding: 0;
+  z-index: 1046;
+  box-shadow: none;
+  touch-action: manipulation;
+}
+
+.mfp-close:active {
+  top: 140px;
+}
 /* TESTIMONIALS */
 .testtimon{
 background-color:#f9f7fe;
@@ -707,6 +746,7 @@ background-color:#f9f7fe;
 background-color: white;
 margin: 0 10px;
 padding: 50px;
+border-radius: 15px;
 }
 .testtimon .slick-dots li button:before{
 font-size: 15px;
@@ -913,15 +953,8 @@ margin: 0 90px 0 70px;
   line-height: 28px;
   color: #696969;
 }
-.Us_item a{
-  font-size: 17px;
-  padding: 0;
-  text-decoration: none;
-  color: black;
-  border-bottom: 2px solid #189A46;
-  font-weight: 600;
-  margin-top: 20px;
-}
+
+
 /* our history */
 .History{
   background-image: url(../img/banner2.jpg);
@@ -1389,7 +1422,7 @@ font-size: 40px;
 }
 
 /* Dark Theme*/
-
+/* Home Pages */
 .dark#myBody {
   background-color: #222222;
   color: white;
@@ -1492,6 +1525,32 @@ font-size: 40px;
   display: none;
 }
 
+.dark .testtimon .carousel_content .test_item{
+  background-color: #151515;
+}
+
+/* About pages */
+.dark .aboutUs{
+  background-color: #151515;
+}
+
+.dark .chooseUs{
+  background-color: #151515;
+}
+
+.dark .who_item_two h6 {
+  color: white;
+}
+
+.dark .team{
+  background-color: #222222;
+}
+
+.dark .team_icon a{
+  background-color: transparent;
+}
+
+ /* BlogPages1,2 */
 .dark .card {
   background-color: #000c04;
 }
@@ -1515,6 +1574,17 @@ font-size: 40px;
 .dark .page-link{
   color:white;
 }
+
+.dark .page-link:hover{
+  color:#0aca38;
+}
+
+/* ContactPages */
+
+.dark .contact{
+  background-color: #151515;
+}
+
 
 /* BACK TO TOP */
 .back_to_top{
