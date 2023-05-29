@@ -671,7 +671,7 @@ a.dropdown-item:hover::after{
   position: relative;
   display: inline-block;
 }
-.video .video_item .play_icon{
+.video .video_item i{
   width: 60px;
   background-color: white;
   height: 60px;
@@ -679,14 +679,13 @@ a.dropdown-item:hover::after{
   border-radius: 50%;
   color: #189a46;
   font-size: 20px;
-}
-.video .video_item .play_icon{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+
 /* TESTIMONIALS */
 .testtimon{
 background-color:#f9f7fe;
@@ -771,19 +770,21 @@ display: flex;
 justify-content: center;
 gap: 20px;
 }
-.form input{
-padding: 15px 100px;
+input{
+padding: 15px 150px 15px 10px;
 text-align: left;
 border-radius: 10px;
-border-color: #189A46;
+border: 1px solid #189A46;
+outline: 0;
 }
 .form button{
 padding: 15px 25px;
 border-radius: 10px;
-border-color: #189A46;
+border: none;
 background-color: #189A46;
 color: white;
 }
+
 /* footer */
 footer{
   background-color: black;
@@ -796,7 +797,7 @@ footer{
 }
 
 .contact-information {
-  flex: 2;
+  flex: 3;
 }
 
 .archives,
@@ -866,6 +867,15 @@ footer{
 .copyright{
   color: #696969;
   font-size: 16px;
+}
+.copyright a{
+  text-decoration: none;
+  color: #696969;
+  transition: all 0.5s;
+  color: red;
+}
+.copyright a:hover{
+  text-decoration: underline;
 }
 
 /* SERVICES PAGES */
