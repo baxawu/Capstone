@@ -27,9 +27,10 @@
 
 </head>
 
-<body>
+<body id="myBody">
   <!-- Header -->
-  <header class="fixed-top">
+  <div id="backtop">
+    <header class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <!-- Logo -->
@@ -103,9 +104,17 @@
             </div>
             <button class="bg_search" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
+          <div class="dark_theme ms-1">
+            <div class="dark_button">
+              <button class="btn" id="switchButton" title="Click to switch theme">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </button>
+            </div>
+          </div>
       </nav>
     </div>
-  </header>
+  </header></div> 
   <!-- Banner -->
   <section class="banner">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -614,12 +623,6 @@
           </div>
         </div>
   </section>
-  <!-- back top top -->
-  <div class="back_to_top">
-      <a href="#header">
-          <i class="fa-solid fa-angle-up"></i>
-      </a>
-  </div>
   <!-- footer -->
   <footer>
       <div class="container py-5 footer_content">
@@ -674,6 +677,12 @@
       <p>© 2023 All Rights Reserved by W3Layouts.</p>
       </div>
   </footer>
+   <!-- back top top -->
+   <div class="back_to_top">
+    <a href="#backtop">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </div>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -740,6 +749,9 @@
    });
  });
  </script>
+ 
+ <!-- darkTheme -->
+ <script src="./js/darkTheme.js"></script>
 </body>
 
 </html>
