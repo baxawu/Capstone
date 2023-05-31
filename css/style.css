@@ -346,7 +346,6 @@ a.dropdown-item:hover::after{
   font-weight: 700;
   color: #fff;
 }
-
 .carousel_button .btn-white:hover {
   padding: 12px 35px;
   font-size: 18px;
@@ -358,7 +357,6 @@ a.dropdown-item:hover::after{
   background-color: #fff;
   color: #64bb83;
 }
-
 .carousel_button .btn-white {
   padding: 12px 35px;
   font-size: 18px;
@@ -666,6 +664,7 @@ a.dropdown-item:hover::after{
 }
 .video .video_item img{
   width: 80%;
+  border-radius: 10px;
 }
 .video .video_item  {
   position: relative;
@@ -919,41 +918,29 @@ footer{
 }
 
 /* About Pages */
-.Us_about{
-  display: flex;
-  align-items: center;
-  margin-right: -15px;
-  margin-left: -15px;
-
-}
-.Us_content{
-width: 85%;
-margin: 0 90px 0 70px; 
-}
-.Us_content h6{
+.sub-title{
   font-size: 18px;
-  font-weight: 400;
-  line-height: 2em;
-  letter-spacing: 1px;
-  color: red;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color:red
 }
-.Us_content h3{
+.hny-title {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
+  text-transform: capitalize;
 }
-.Us_content h4{
+.w3l-content-6 .content-6-mian h4 {
   font-size: 22px;
   line-height: 32px;
   opacity: 0.9;
   font-weight: 600;
 }
-.Us_item{
-  font-size: 1.2em;
-  line-height: 28px;
-  color: #696969;
+p{
+    color:#696969;
 }
-
 
 /* our history */
 .History{
@@ -987,7 +974,7 @@ font-size: 40px;
   padding-bottom: 15px;
 }
 .history_content .history_title p{
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 28px;
  color: white;
  opacity: 0.7;
@@ -1007,7 +994,7 @@ font-size: 40px;
 }
 .history_grid .history_item p{
   color: white;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 28px;
   opacity: 0.7;
 }
@@ -1048,7 +1035,6 @@ font-size: 40px;
 }
 .who_item_one p{
 margin-top: 1rem;
-font-size: 1.2em;
   line-height: 28px;
   color: #696969;
 }
@@ -1061,7 +1047,6 @@ text-align: left;
 }
 .who_item_two p{
 margin-top: 0.5rem;
-font-size: 1.2em;
   line-height: 28px;
   color: #696969;
   padding-right: 120px;
@@ -1078,7 +1063,6 @@ margin-left: -15px;
 color: #189A46;
 font-size: 30px
 }
-
 /* team */
 .team{
 background-color: #f9f7fe;
@@ -1214,6 +1198,38 @@ ul.breadcrumbs_text {
 font-size: 40px;
   font-weight: 600;
   line-height: 48px;
+}
+.column_item{
+  position: relative;
+  overflow: hidden;
+}
+.column_item::before{
+  content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+.column_item .over_lay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transition: all 0.75s;
+}
+.column_item:hover::before{
+  left: 125%;
+}
+.column_item:hover .over_lay{
+  opacity: 1;
 }
 
 /* PAGES */
