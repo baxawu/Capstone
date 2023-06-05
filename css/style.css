@@ -1681,7 +1681,7 @@ ul.breadcrumbs_text {
   } 
 
   .banner .carousel-inner .carousel-item .carousel_button {
-    margin-right: 0px;
+    margin-right: -60px;
     margin-bottom: 100px;
     margin-top: 0;
   }
