@@ -591,6 +591,25 @@ a.dropdown-item:hover::after {
 .ourPlans .Plans_item .item_bottom {
   text-align: center;
 }
+
+.ourPlans .Plans_item .text-success{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.ourPlans .Plans_item .text-success span{
+  font-size: 20px;
+}
+
+.ourPlans .Plans_item .text_middle{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.ourPlans .Plans_item .text_middle span{
+  font-size: 20px;
+}
+
 .ourPlans .Plans_item .item_content {
   background-color: white;
 }
@@ -1588,10 +1607,6 @@ ul.breadcrumbs_text {
   background-color: #151515;
 }
 
-.dark h4 {
-  color: white;
-}
-
 .dark .text_red {
   color: white;
 }
@@ -1620,6 +1635,7 @@ ul.breadcrumbs_text {
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
+  z-index: 99;
 }
 .back_to_top a {
   display: inline-block;
@@ -1728,6 +1744,18 @@ ul.breadcrumbs_text {
     display: flex;
   }
 
+}
+
+@media screen and (max-width:665px) {
+  .contact-information {
+    flex: 500px;
+}
+  .archives {
+    flex: 1px;
+}
+.categories{
+  flex: 2px;
+}
 }
 
 @media screen and (max-width: 600px){
