@@ -1227,6 +1227,7 @@ ul.breadcrumbs_text {
 .column_item {
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 .column_item::before {
   content: "";
@@ -1253,6 +1254,7 @@ ul.breadcrumbs_text {
 
   opacity: 0;
   transition: all 0.75s;
+  z-index: 0;
 }
 .column_item:hover::before {
   left: 125%;
