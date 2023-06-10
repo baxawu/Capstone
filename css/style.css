@@ -1245,22 +1245,8 @@ ul.breadcrumbs_text {
   transform: skewX(-25deg);
   transition: all 0.75s;
 }
-.column_item .over_lay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;
-  transition: all 0.75s;
-  z-index: 0;
-}
 .column_item:hover::before {
   left: 125%;
-}
-.column_item:hover .over_lay {
-  opacity: 1;
 }
 
 /* PAGES */
@@ -1586,6 +1572,15 @@ ul.breadcrumbs_text {
 
 .dark .who_item_two h6 {
   color: white;
+}
+
+.dark .card-body h4 {
+  color: white;
+  transition: all .5s;
+}
+
+.dark .card-body h4:hover {
+  color: #0aca38;
 }
 
 .dark .team {
